@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8" />
+	<title>Soma dos números ímpares e multíplos de 3 em determinado intervalo</title>
+</head>
+<body>
+	<script>
+		"use strict";
+		var soma = 0, i;
+		var lim_inf = parseInt(prompt("Digite o limite inferior:"));
+		var lim_sup = parseInt(prompt("Digite o limite superior:"));
+		i = lim_inf;
+		for(i; i <= lim_sup; i++) {
+			if(i % 3 ===0 && i % 2 != 0) {
+				soma += i;
+			}
+		}
+		alert("A soma dos números ímpares e multíplos de 3 entre " + lim_inf + " e " + lim_sup + " é: " + soma);
+	</script>
+</body>
+</html>
